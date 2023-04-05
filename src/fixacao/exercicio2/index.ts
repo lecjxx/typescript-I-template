@@ -8,8 +8,10 @@ Não são bissextos todos os demais anos.
 Com isso em mente, refatore a função para o Typescript.
 */
 
-/* DESCOMENTE ESTA FUNÇÃO
-function checaAnoBissexto(ano) {
+import { Bissexto } from "../../types/types"
+
+// DESCOMENTE ESTA FUNÇÃO
+function checaAnoBissexto(ano:number) {
   const cond1 = ano % 400 === 0
   const cond2 = (ano % 4 === 0) && (ano % 100 !== 0)
 
@@ -18,4 +20,4 @@ function checaAnoBissexto(ano) {
 
 console.log(checaAnoBissexto(2022))
 console.log(checaAnoBissexto(2020))
-*/
+
